@@ -1,0 +1,25 @@
+.card {
+  padding: 15px;
+  /* margin-top: 40px; */
+  /* margin-left: 200px;
+  margin-bottom: 50px; */
+  background-color: rgb(214, 212, 210);
+  /* color: red; */
+  width: 250px;
+  /* height: 350px; */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.image {
+  margin-bottom: 25px;
+}
+.categories {
+  margin-bottom: 15px;
+}
+.title {
+  margin-bottom: 10px;
+  font-weight: 700;
+}
