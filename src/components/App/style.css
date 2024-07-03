@@ -1,4 +1,3 @@
-/*Обнуление*/
 * {
   padding: 0;
   margin: 0;
@@ -28,8 +27,7 @@ aside {
 html,
 body {
   font-family: 'Roboto', sans-serif;
-  color: white;
-  /* color: rgb(6, 6, 6); */
+  color: rgb(255, 255, 255);
   height: 100%;
   width: 100%;
   font-size: 100%;
@@ -76,32 +74,7 @@ h6 {
   font-size: inherit;
   font-weight: inherit;
 }
-/*--------------------*/
-/* ------------------------------------------------------------------------------ */
-
-.bookInfo {
-  color: blue;
-}
-
-/* ==Main============================== */
-
-.container {
-  max-width: 1100px;
-  margin: 0px auto;
-
-  padding: 0 15px;
-  box-sizing: content-box;
-  color: black;
-}
-
-.cards__container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 25px;
-}
-p {
-  margin-top: 20px;
-  margin-bottom: 40px;
-  /* margin-bottom: 50px; */
-  text-align: center;
+.error {
+  color: rgb(0, 0, 0);
+  font-size: 40px;
 }

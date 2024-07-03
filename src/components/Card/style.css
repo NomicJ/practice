@@ -1,17 +1,18 @@
 .card {
   padding: 15px;
-  /* margin-top: 40px; */
-  /* margin-left: 200px;
-  margin-bottom: 50px; */
+
   background-color: rgb(214, 212, 210);
-  /* color: red; */
   width: 250px;
-  /* height: 350px; */
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: all 0.4s ease;
+}
+.card:hover {
+  transform: scale(1.05);
+  background-color: rgb(168, 166, 164);
 }
 .image {
   margin-bottom: 25px;

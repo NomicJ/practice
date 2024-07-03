@@ -1,11 +1,10 @@
 import React from 'react';
-// import ReactDOM from 'react-dom'
-import ReactDOM, { createRoot } from 'react-dom/client';
+import { createRoot } from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 
-import { BookProvider, CategoryProvider } from '../src/components/Context';
 import { App } from './components/App';
-// ReactDOM.render(<App />, document.getElementById("root"));
+import { BookProvider } from './context/BookContext';
+import { CategoryProvider } from './context/CategoryContext';
 
 const domNode = document.getElementById('root') as HTMLElement;
 const root = createRoot(domNode);
