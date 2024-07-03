@@ -1,5 +1,9 @@
 Хлус Михаил Александрович
 
+https://superlative-kataifi-72fbde.netlify.app/
+
+(данные загружаются с vpn)
+
 Описание:
 React-приложение поиска книг с помощью Google Books API.
 
