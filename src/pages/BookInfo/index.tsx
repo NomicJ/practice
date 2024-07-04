@@ -2,7 +2,7 @@ import '../BookInfo/style.css';
 
 import { fetchBookData } from '@api/bookInfoApi';
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import ClipLoader from 'react-spinners/ClipLoader';
 
 import { BookData } from '../../types/index';
@@ -32,7 +32,7 @@ export const BookInfo: React.FC = () => {
           <ClipLoader className="clipLoader" />
         </div>
       ) : (
-        <div className="bookInfo">
+        <main className="bookInfo">
           <div className="image__container">
             {book?.volumeInfo?.imageLinks?.medium && (
               <img
@@ -43,6 +43,9 @@ export const BookInfo: React.FC = () => {
             )}
           </div>
           <div className="information__container">
+            <Link className="linkBack" to="/">
+              Вернуться на главную
+            </Link>
             <h3 className="book__categories">
               {book?.volumeInfo?.categories || 'Категория отсутствует'}
             </h3>
@@ -56,7 +59,7 @@ export const BookInfo: React.FC = () => {
               {book?.volumeInfo?.description || 'Описание отсутствует'}
             </p>
           </div>
-        </div>
+        </main>
       )}
     </>
   );

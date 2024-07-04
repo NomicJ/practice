@@ -8,6 +8,8 @@ import React, { Dispatch, SetStateAction, useEffect, useState } from 'react';
 import { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 
+import { categories, sorting } from './constants';
+
 export const Header: React.FC<{
   setIsLoading: Dispatch<SetStateAction<boolean>>;
 }> = ({ setIsLoading }) => {
@@ -76,17 +78,6 @@ export const Header: React.FC<{
     }
   };
 
-  const categories = [
-    'all',
-    'Art',
-    'Biography',
-    'Computers',
-    'History',
-    'Medical',
-    'Poetry',
-  ];
-  const sorting = ['relevance', 'newest'];
-
   return (
     <header className="header">
       <h1 className="header__title">Search for books</h1>
@@ -100,7 +91,9 @@ export const Header: React.FC<{
             onChange={handleSearchChange}
             onKeyDown={handleSearchKeyDown}
           />
-          <img className="search__magnifier" src={loop} onClick={handleClick} />
+          <button onClick={handleClick}>
+            <img className="search__magnifier" src={loop} />
+          </button>
         </div>
         <div className="selects">
           <div className="selectContainer">

@@ -1,6 +1,6 @@
 import '../Card/style.css';
 
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
 import { CardProps } from '../../types/index';
